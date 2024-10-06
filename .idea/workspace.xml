@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c00d7ce9-48d6-4545-ab6c-9dd3bc7e48d5" name="更改" comment="" />
+    <list default="true" id="c00d7ce9-48d6-4545-ab6c-9dd3bc7e48d5" name="更改" comment="更新 获取题目（并将其转为json格式），获取办法，README文件中指明了题目json格式各标识符含义" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,18 +23,21 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2n3LKsmLnLf9nRRzVTGnasjHMVn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,5 +60,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新 获取题目（并将其转为json格式），获取办法，README文件中指明了题目json格式各标识符含义" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新 获取题目（并将其转为json格式），获取办法，README文件中指明了题目json格式各标识符含义" />
   </component>
 </project>
