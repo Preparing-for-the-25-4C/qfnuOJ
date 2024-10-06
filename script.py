@@ -42,7 +42,7 @@ def convert_xml_to_json(file_path, start_id=1):
         if key in xml_dict:
             del xml_dict[key]
 
-    json_data = json.dumps(xml_dict, indent=4)
+    json_data = json.dumps(xml_dict, indent=4, ensure_ascii=False)
 
     output_json_file_path = f'json/{start_id}-{id_counter-1}.json'
     with open(output_json_file_path, 'w', encoding='utf-8') as json_file:
@@ -52,4 +52,4 @@ def convert_xml_to_json(file_path, start_id=1):
     return id_counter - 1
 
 # 使用函数并传入文件路径和开始ID
-#last_item_id = convert_xml_to_json('fps-ianwusb-27978,26967.xml', 1)
+# last_item_id = convert_xml_to_json('fps-ianwusb-27978,26967.xml', 1)
