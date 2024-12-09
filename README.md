@@ -104,13 +104,15 @@ docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-do
 docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/redis:7.2.4
 ```
 
-拉完这两个存一下快照，接着拉下面的 这个镜像拉取的时间不超过两个小时
+拉完这两个存一下快照，接着拉下面的 
+
+***这个镜像拉取的时间不超过两个小时***
 
 ```
 docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/judge0:1.13.1
 ```
 
-> 正在测试📦 已安装编译器、解释器和沙箱的 Docker 映像是否可用
+> 📦 已安装编译器、解释器和沙箱的 Docker 映像不可用
 >
 > ```
 > docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/compilers
@@ -199,3 +201,8 @@ http://<您服务器的IP地址>:端口映射/docs
 ## 四.官方API文档
 
 [Judge0 CE - API Docs](https://ce.judge0.com/docs)
+
+## 五.Docker正常运行，但是测评时出现:"No such file or directory @ rb_sysopen - /box/main.xxx"的解决方法
+
+**没有更新GRUB**
+见[chown: cannot access '/box': No such file or directory · Issue #325 · judge0/judge0](https://github.com/judge0/judge0/issues/325)
