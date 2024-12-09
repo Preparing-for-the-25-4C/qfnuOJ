@@ -107,11 +107,11 @@ docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-do
 拉完这两个存一下快照，接着拉下面的
 
 ```
-docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/compilers
+docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/judge0:1.13.1
 ```
 
 > ```
-> crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/judge0:1.13.1
+> docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/compilers
 > ```
 
 ### 3.将 docker-compose.yml替换成下面的内容
@@ -128,7 +128,7 @@ x-logging:
 
 services:
   server:
-    image: crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/compilers
+    image: crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/judge0:1.13.1
     volumes:
       - ./judge0.conf:/judge0.conf:ro
     ports:
@@ -138,7 +138,7 @@ services:
     restart: always
 
   workers:
-    image: crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/compilers
+    image: crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/judge0:1.13.1
     command: ["./scripts/workers"]
     volumes:
       - ./judge0.conf:/judge0.conf:ro
