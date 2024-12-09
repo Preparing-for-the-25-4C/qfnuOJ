@@ -171,8 +171,11 @@ volumes:
 ### 4.更改judge0.conf
 
 访问[random.org/passwords/?num=1&len=32&format=plain&rnd=new](https://www.random.org/passwords/?num=1&len=32&format=plain&rnd=new)生成一个随机密码。
+
 使用生成的密码更新judge0.conf文件中的REDIS_PASSWORD变量。
+
 再次访问[random.org/passwords/?num=1&len=32&format=plain&rnd=new](https://www.random.org/passwords/?num=1&len=32&format=plain&rnd=new)生成另一个随机密码。
+
 使用生成的密码更新judge0.conf文件中的POSTGRES_PASSWORD变量。
 
 ### 5.自定义judge0.conf文件，可根据分支中的【judge0(译文).txt】文件
