@@ -104,12 +104,14 @@ docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-do
 docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/redis:7.2.4
 ```
 
-拉完这两个存一下快照，接着拉下面的
+拉完这两个存一下快照，接着拉下面的 这个镜像拉取的时间不超过两个小时
 
 ```
 docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/judge0:1.13.1
 ```
 
+> 正在测试📦 已安装编译器、解释器和沙箱的 Docker 映像是否可用
+>
 > ```
 > docker pull crpi-l7ij7p17lt67sp5y.cn-qingdao.personal.cr.aliyuncs.com/ianwusb-docker-images/compilers
 > ```
