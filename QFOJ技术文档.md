@@ -40,7 +40,7 @@ Git/Github：项目版本管理
 
 ### 			系统架构
 
-<img src="D:\MyDocuments\QFOJ\qfoj系统架构.png" style="zoom: 50%;" />
+<img src="./qfoj系统架构.png" style="zoom: 50%;" />
 
 ### 	HTTP报文
 
