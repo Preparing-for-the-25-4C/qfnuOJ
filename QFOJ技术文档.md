@@ -40,7 +40,7 @@ Git/Github：项目版本管理
 
 ### 			系统架构
 
-<img src="./qfoj系统架构.png" style="zoom: 50%;" />
+<img src="https://github.com/Preparing-for-the-25-4C/qfnuOJ/blob/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/qfoj%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84.png?raw=true" style="zoom: 50%;" />
 
 ### 	HTTP报文
 
