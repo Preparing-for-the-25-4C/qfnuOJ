@@ -47,22 +47,26 @@ Git/Github：项目版本管理
 **请求报文：**
 
 请求头: 
+```
 Content-Type: application/json;charset=UTF-8
 Authorization: 8fdc11c6-b261-499b-ac88-0b4623e77849
+```
 请求体:
 json格式，按情况而定
 
 **响应报文:**
 
 响应头:
+```
 Content-Type: application/json;charset=UTF-8
 Status-Code: 200
+```
 响应体:
 
 ```json
 {
-	"errCode": XXXX, //根据业务自定义
-    "data": {} //相应的具体数据
+    "errCode": "xxxx", //根据业务自定义
+    "data": {} //响应的具体数据
 }
 ```
 
@@ -74,6 +78,8 @@ RBAC权限系统：**token** + **redis**
 具体内容参见：https://blog.csdn.net/m0_62006803/article/details/133962328?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522b3c44c363b3077ce56c14b90fd173f47%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=b3c44c363b3077ce56c14b90fd173f47&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-133962328-null-null.142^v100^pc_search_result_base8&utm_term=rbac%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1&spm=1018.2226.3001.4187
 
 **权限标识**
+
+```
 system:problem:add
 system:problem:update
 system:problem:delete
@@ -93,6 +99,7 @@ system:perm:add
 system:perm:update
 system:perm:delete
 system:perm:read
+```
 
 超级权限：system
 
