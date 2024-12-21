@@ -40,7 +40,7 @@ Git/Github：项目版本管理
 
 ### 			系统架构
 
-<img src="https://github.com/Preparing-for-the-25-4C/qfnuOJ/blob/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/qfoj%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84.png?raw=true" style="zoom: 50%;" />
+<img src="https://github.com/Preparing-for-the-25-4C/qfnuOJ/blob/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/qfnuoj%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84.png?raw=true" style="zoom: 50%;" />
 
 ### 	HTTP报文
 
@@ -71,6 +71,12 @@ Status-Code: 200
 ```
 
 **PS：若需要上传或下载文件，具体参照Apifox**
+
+**errCode列举:**
+```
+1000 业务正常
+1001 服务器内部错误
+```
 
 ### 权限系统
 
