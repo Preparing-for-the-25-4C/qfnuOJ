@@ -12,9 +12,9 @@ CREATE TABLE `user` (
 	`user_school` VARCHAR(100) NOT NULL DEFAULT '' COMMENT '用户学校',
 	`del_flag` CHAR(1) NOT NULL DEFAULT '0' COMMENT '删除标记(0表示可用,1表示删除)',
 	`create_by` VARCHAR(20) NOT NULL COMMENT '创建者用户名',
-	`create_time` DATE NOT NULL COMMENT '创建时间',
+	`create_time` DATETIME NOT NULL COMMENT '创建时间',
 	`update_by` VARCHAR(20) NOT NULL COMMENT '修改者用户名',
-	`update_time` DATE NOT NULL COMMENT '修改时间'
+	`update_time` DATETIME NOT NULL COMMENT '修改时间'
 ) ENGINE = INNODB COMMENT = '用户表';
 
 CREATE TABLE `role` (
@@ -22,9 +22,9 @@ CREATE TABLE `role` (
 	`role_name` VARCHAR(20) NOT NULL UNIQUE COMMENT '角色名',
 	`del_flag` CHAR(1) NOT NULL DEFAULT '0' COMMENT '删除标记(0表示可用,1表示删除)',
 	`create_by` VARCHAR(20) NOT NULL COMMENT '创建者用户名',
-	`create_time` DATE NOT NULL COMMENT '创建时间',
+	`create_time` DATETIME NOT NULL COMMENT '创建时间',
 	`update_by` VARCHAR(20) NOT NULL COMMENT '修改者用户名',
-	`update_time` DATE NOT NULL COMMENT '修改时间'
+	`update_time` DATETIME NOT NULL COMMENT '修改时间'
 ) ENGINE = INNODB COMMENT = '角色表';
 
 CREATE TABLE `user_role` (
@@ -37,9 +37,9 @@ CREATE TABLE `perm` (
 	`perm_tag` VARCHAR(100) NOT NULL UNIQUE COMMENT '权限标识',
 	`del_flag` CHAR(1) NOT NULL DEFAULT '0' COMMENT '删除标记(0表示可用,1表示删除)',
 	`create_by` VARCHAR(20) NOT NULL COMMENT '创建者用户名',
-	`create_time` DATE NOT NULL COMMENT '创建时间',
+	`create_time` DATETIME NOT NULL COMMENT '创建时间',
 	`update_by` VARCHAR(20) NOT NULL COMMENT '修改者用户名',
-	`update_time` DATE NOT NULL COMMENT '修改时间'
+	`update_time` DATETIME NOT NULL COMMENT '修改时间'
 ) ENGINE = INNODB COMMENT = '权限表';
 
 CREATE TABLE `role_perm` (
@@ -57,9 +57,9 @@ CREATE TABLE `prob` (
 	`prob_success` DOUBLE NOT NULL DEFAULT 0 COMMENT '正确率',
 	`prob_check` INT NOT NULL DEFAULT 0 COMMENT '点击量',
 	`create_by` VARCHAR(20) NOT NULL COMMENT '创建者用户名',
-	`create_time` DATE NOT NULL COMMENT '创建时间',
+	`create_time` DATETIME NOT NULL COMMENT '创建时间',
 	`update_by` VARCHAR(20) NOT NULL COMMENT '修改者用户名',
-	`update_time` DATE NOT NULL COMMENT '修改时间'
+	`update_time` DATETIME NOT NULL COMMENT '修改时间'
 ) ENGINE = INNODB COMMENT = '题目表';
 
 CREATE TABLE `user_prob` (
@@ -74,7 +74,7 @@ CREATE TABLE `login_log` (
 	`log_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '日志ID',
 	`log_des` VARCHAR(100) NOT NULL COMMENT '日志描述',
 	`login_user` VARCHAR(20) NOT NULL COMMENT '登录用户名',
-	`login_time` DATE NOT NULL COMMENT '登录时间',
+	`login_time` DATETIME NOT NULL COMMENT '登录时间',
 	`login_location` VARCHAR(100) NOT NULL COMMENT '登录地点',
 	`login_sys` VARCHAR(100) NOT NULL COMMENT '使用的系统/浏览器'
 ) ENGINE = INNODB COMMENT = '登录日志';
@@ -83,7 +83,7 @@ CREATE TABLE `oper_log` (
 	`log_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '日志ID',
 	`oper_tag` VARCHAR(100) NOT NULL COMMENT '操作标识',
 	`oper_user` VARCHAR(20) NOT NULL COMMENT '操作用户名',
-	`oper_time` DATE NOT NULL COMMENT '操作时间',
+	`oper_time` DATETIME NOT NULL COMMENT '操作时间',
 	`oper_location` VARCHAR(100) NOT NULL COMMENT '操作地点',
 	`oper_sys` VARCHAR(100) NOT NULL COMMENT '使用的系统/浏览器'
 ) ENGINE = INNODB COMMENT = '操作日志';
@@ -95,12 +95,12 @@ CREATE TABLE `judge_record` (
 	`record_status` VARCHAR(20) NOT NULL COMMENT '测评状态',
 	`judge_time` INT NOT NULL COMMENT '耗时(毫秒)',
 	`record_code` LONGTEXT NOT NULL COMMENT '测评代码',
-	`record_time` DATE NOT NULL COMMENT '测评时间',
+	`record_time` DATETIME NOT NULL COMMENT '测评时间',
 	`judge_lan` VARCHAR(20) NOT NULL COMMENT '语言'
 ) ENGINE = INNODB COMMENT = '测评记录';
 
 CREATE TABLE `error_log` (
 	`log_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '日志ID',
 	`error_msg` LONGTEXT NOT NULL COMMENT '异常堆栈信息',
-	`error_time` DATE NOT NULL COMMENT '发生时间'
+	`error_time` DATETIME NOT NULL COMMENT '发生时间'
 ) ENGINE = INNODB COMMENT = '异常日志';
