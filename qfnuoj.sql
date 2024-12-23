@@ -1,5 +1,5 @@
 -- qfnuoj库表设计
--- 表：用户，用户角色，角色，角色权限，权限，题目，用户题目，登录日志，操作日志，测评记录
+-- 表：用户，用户角色，角色，角色权限，权限，题目，用户题目，登录日志，操作日志，测评记录，异常日志
 
 CREATE TABLE `user` (
 	`user_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '用户ID',
@@ -98,3 +98,9 @@ CREATE TABLE `judge_record` (
 	`record_time` DATE NOT NULL COMMENT '测评时间',
 	`judge_lan` VARCHAR(20) NOT NULL COMMENT '语言'
 ) ENGINE = INNODB COMMENT = '测评记录';
+
+CREATE TABLE `error_log` (
+	`log_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '日志ID',
+	`error_msg` LONGTEXT NOT NULL COMMENT '异常堆栈信息',
+	`error_time` DATE NOT NULL COMMENT '发生时间'
+) ENGINE = INNODB COMMENT = '异常日志';
