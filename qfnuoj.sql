@@ -56,6 +56,8 @@ CREATE TABLE `prob` (
 	`prob_commit` INT NOT NULL DEFAULT 0 COMMENT '尝试人数',
 	`prob_success` DOUBLE NOT NULL DEFAULT 0 COMMENT '正确率',
 	`prob_check` INT NOT NULL DEFAULT 0 COMMENT '点击量',
+	`prob_origin` VARCHAR(100) NOT NULL DEFAULT '' COMMENT '题目来源',
+	`prob_skills` VARCHAR(100) NOT NULL DEFAULT '' COMMENT '涉及知识点(多个之间用;分隔)',
 	`create_by` VARCHAR(20) NOT NULL COMMENT '创建者用户名',
 	`create_time` DATETIME NOT NULL COMMENT '创建时间',
 	`update_by` VARCHAR(20) NOT NULL COMMENT '修改者用户名',
