@@ -123,3 +123,41 @@ system:perm:read
 接口文档的编写使用**Apifox**
 
 ## 四.前端设计
+**前端统一使用组合式API**
+
+### Monaco Editor快速入门
+```javascript
+<template>
+  <div id="editorContainer" style="width: 100%; height: 300px"></div>
+  <button @click="test">test</button>
+</template>
+
+<script setup>
+import * as monaco from "monaco-editor";
+import { ref, toRaw, onMounted } from "vue";
+import axios from "axios";
+var editor = ref(null)
+onMounted(() => {
+  init();
+});
+const init = () => {
+  // 初始化编辑器
+  editor.value = monaco.editor.create(document.getElementById("editorContainer"), {
+    value: "",
+    language: "java",
+    tabSize: 2,
+    theme: "vs",
+    minimap: {
+      enabled: false, // 关闭小地图
+    },
+    scrollBeyondLastLine: true,
+    automaticLayout: true, // 自动布局
+    readOnly: false, //只读
+  });
+};
+const test = () => {
+  //获取代码框的内容
+  console.log(toRaw(editor.value).getValue());
+}
+</script>
+```
