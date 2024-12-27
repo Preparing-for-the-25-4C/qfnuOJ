@@ -20,6 +20,7 @@ Vant 3.0   有赞前端团队开源的移动端组件库
 ​NutUI 3   京东风格的 Vue 移动端组件库，开发和服务于移动Web界面的企业级产品
 
 知识图谱框架：**SimpleMindMap** https://wanglin2.github.io/mind-map-docs/
+代码编辑器: **Monaco Editor** https://wf0.github.io/api.html
 
 ### 		后端
 
@@ -107,9 +108,9 @@ system:perm:add
 system:perm:update
 system:perm:delete
 system:perm:read
-```
 
 超级权限：system
+```
 
 ### 库表设计
 
