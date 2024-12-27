@@ -75,10 +75,19 @@ Status-Code: 200
 
 **errCode列举:**
 ```
+//业务相关:
 1000 业务正常
 1001 服务器内部错误
 1002 验证码错误
 1003 用户名或密码错误
+//Judge相关:
+2001 In Queue
+2002 Processing
+2003 Accepted
+2004 Wrong Answer
+2005 Time Limit Exceeded
+2006 Compilation Error
+2007 Out Of Memory
 ```
 
 ### 权限系统
@@ -93,6 +102,7 @@ system:problem:add
 system:problem:update
 system:problem:delete
 system:problem:read
+system:problem:submit
 
 system:user:add
 system:user:update
@@ -108,8 +118,17 @@ system:perm:add
 system:perm:update
 system:perm:delete
 system:perm:read
+```
 
-超级权限：system
+**权限分配**
+```
+游客:
+    system:problem:read
+用户:
+    system:problem:read
+    system:problem:submit
+管理员:
+    system
 ```
 
 ### 库表设计
