@@ -49,6 +49,7 @@ CREATE TABLE `role_perm` (
 
 CREATE TABLE `prob` (
 	`prob_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '题目ID',
+	`prob_title` VARCHAR(100) NOT NULL COMMENT '题目标题',
 	`prob_content` LONGTEXT NOT NULL COMMENT '题目内容(最大支持4GB)',
 	`prob_test` VARCHAR(100) NOT NULL COMMENT '测试数据地址', --例如: /testdata/100/1.in
 	`del_flag` CHAR(1) NOT NULL DEFAULT '0' COMMENT '删除标记(0表示可用,1表示删除)',
