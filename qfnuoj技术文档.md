@@ -90,6 +90,8 @@ Status-Code: 200
 1004 幂等性错误
 1005 用户名已存在
 1006 token失效
+1007 邮箱验证码错误
+1008 数据不符合规范
 //Judge相关:
 2001 In Queue
 2002 Processing
