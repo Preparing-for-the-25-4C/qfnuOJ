@@ -92,6 +92,8 @@ Status-Code: 200
 1006 token失效
 1007 邮箱验证码错误
 1008 数据不符合规范
+1009 邮箱已被使用
+1010 手机号已被使用
 //Judge相关:
 2001 In Queue
 2002 Processing
