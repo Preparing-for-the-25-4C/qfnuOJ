@@ -1,5 +1,7 @@
 -- qfnuoj库表设计
--- 表：用户，用户角色，角色，角色权限，权限，题目，用户题目，登录日志，操作日志，测评记录，异常日志
+-- 表：用户，用户角色，角色，角色权限，权限，题目，
+-- 用户题目，登录日志，操作日志，测评记录，异常日志，
+-- 题目补充信息
 
 CREATE TABLE `user` (
 	`user_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '用户ID',
@@ -47,11 +49,13 @@ CREATE TABLE `role_perm` (
 	`perm_id` INT NOT NULL COMMENT '权限ID'
 ) ENGINE = INNODB COMMENT = '角色权限表';
 
+-- ALTER TABLE `prob` AUTO_INCREMENT = 1;
+
 CREATE TABLE `prob` (
 	`prob_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '题目ID',
 	`prob_title` VARCHAR(100) NOT NULL COMMENT '题目标题',
 	`prob_content` LONGTEXT NOT NULL COMMENT '题目内容(最大支持4GB)',
-	`prob_test` VARCHAR(100) NOT NULL COMMENT '测试数据地址', --例如: /testdata/100/1.in
+	`prob_test` VARCHAR(100) NOT NULL COMMENT '测试数据地址',
 	`del_flag` CHAR(1) NOT NULL DEFAULT '0' COMMENT '删除标记(0表示可用,1表示删除)',
 	`prob_ac` INT NOT NULL DEFAULT 0 COMMENT '通过人数',
 	`prob_commit` INT NOT NULL DEFAULT 0 COMMENT '尝试人数',
@@ -107,3 +111,9 @@ CREATE TABLE `error_log` (
 	`error_msg` LONGTEXT NOT NULL COMMENT '异常堆栈信息',
 	`error_time` DATETIME NOT NULL COMMENT '发生时间'
 ) ENGINE = INNODB COMMENT = '异常日志';
+
+CREATE TABLE `prob_supple` (
+	`prob_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '题目ID',
+	`multi_file` CHAR(1) NOT NULL DEFAULT '0' COMMENT '一个测试文件是否有多组测试数据(0表示没有)',
+	`is_input` CHAR(1) NOT NULL DEFAULT '1' COMMENT '该题目是否有输入(1表示有)'
+) ENGINE = INNODB COMMENT = '题目的补充信息';
