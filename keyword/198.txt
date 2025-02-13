@@ -1,0 +1,1 @@
+dynamic programming, unbounded knapsack, depth-first search, backtracking, pruning, complete knapsack, greedy algorithm

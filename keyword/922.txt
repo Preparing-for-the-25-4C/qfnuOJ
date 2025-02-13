@@ -1,0 +1,1 @@
+brute force, enumeration, simulation, arithmetic operations, multiplication, digits, constraints checking, mathematical modeling, number theory, integer operations, loops, conditional statements, 两位数乘法, 四位数结果, 中间乘积三位数, 竖式乘法结构, 数字位数限制, 条件满足

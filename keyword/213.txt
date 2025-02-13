@@ -1,0 +1,1 @@
+dynamic programming, linear dynamic programming, string processing, prefix sum, greedy, enumeration, simulation, array manipulation, loops, substring matching, dynamic programming optimization, interval partitioning

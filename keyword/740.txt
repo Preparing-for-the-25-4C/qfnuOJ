@@ -1,0 +1,1 @@
+string manipulation, simulation, loop control, mathematical pattern recognition, array handling, conditional branching, formatted output, numerical sequence generation, string concatenation, edge case handling, line break management, star placement logic, incremental numbering

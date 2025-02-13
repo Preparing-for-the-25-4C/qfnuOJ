@@ -1,0 +1,1 @@
+simulation, arithmetic operations, division with remainder, process simulation, step-by-step iteration, integer division, variable assignment, sequential operations, state update
