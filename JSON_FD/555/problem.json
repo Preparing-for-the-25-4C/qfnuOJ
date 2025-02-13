@@ -1,0 +1,9 @@
+{
+    "说明": "1. 假定已建立以下链表结构，且指针p和q已指向如下图所示的结点：\n则以下选项中可将q所指的结点从链表中删除，并释放该结点的语句组是(    )。\nA．(*p).next=(*q).next;free(p);         B．p=q.>next; free(q);\nC．p=q;free(q);                      D．p->next =q->next; free(q);\n2. 下列程序的执行结果是（ ）。\n#include \"stdio.h\"\nunion ss\n{ short  n;\nchar c[2];\n};\nvoid main()\n{  union ss x;\nx.n=11;\nx.c[0]=1;\nx.c[1]=0;\nprintf(\"%d\",x.n);\n}\nA． 1    B．266          C． 256       D．128\n3. 当定义一个共用体变量时，系统分配给它的内存是(      )。\nA.各成员所需内存量的总和             B.成员中第一个成员所需内存量\nC.成员中占内存量最大的容量           D.成员中最后一个成员所需内存\n4. 若有以下程序段：\nunion data { int i ; char c; float f;} a;\nint n;\n则以下语句正确的是(      )。\nA.a=5;           B.a={2,\n’\na\n’\n,1.2}       C.printf(\n“\n%d\n”\n,a);      D.n=a;\n5. 设有定义语句：enum t1 {a1, a2 = 7, a3, a4 = 15} time；则枚举常量a2和a3的值分别为 （    ）。\nA. 1和2       B. 2和3       C. 7和2       D. 7和8\n6.\nenum color{red,green,yellow=5,white,black}定义了一个枚举类型。编译程序为值表中各标识符分配的枚举值依次为（  ）。\nA． 1 2 3 4 5               B． 0 1 5 2 3\nC．0 1 5 6 7               D．3 4 5 6 7",
+    "输入格式": "int main()\n\n{\n\nint i;\n\nchar cAnswer[N] = {\"//将你的答案表示成字符串，注意中间不要有空格\"};\n\n//例： char cAnswer[N] = {\"AAAAAA\"}; \n\n//N的值为选择题的个数加1，如本次作业选择题的个数为6，则N的值为7 \n\nprintf(\"%s\", cAnswer);\n\nreturn 0;\n\n} \n\n\n\n请将上述提供的程序复制到提交代码的位置并作相应修改。",
+    "输出格式": "",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "说明": "1. 已知：\nint a, b;\n用语句scanf(“%d%d”,& a ,&b);输入a、b的值时，不能作为输入数据分隔符是（ ）。\nA\n．\n.\n，    \nB\n．空格     \nC\n．回车      \nD\n．\ntab\n键\n2. 有以下程序\n#include <stdio.h>\nvoid main()\n{\nchar c1=’1’,c2=’2’;\nc1=getchar();c2=getchar();putchar(c1);putchar(c2);\n}\n当运行时输入：\na<\n回车\n>\n后，以下叙述正确的是 \n（  ）。\nA．变量\nc1\n被赋予字符\na\n，\nc2\n被赋予回车符\nB．程序将等待用户输入第\n2\n个字符\nC．变量\nc1\n被赋予字符\na\n，\nc2\n中仍是原有字符\n2\nD．变量\nc1\n被赋予字符\na\n，\nc2\n中将无确定值\n3. 已知\ni,j,k\n为\nint\n型变量，若从键盘输入：\n1,2,3<\n回车\n>\n，使\ni\n的值为\n1\n，\nj\n的值为\n2\n，\nk\n的值为\n3\n，以下选项中正确的输入语句是（      ）。\nA.scanf(“%2d%2d%2d”,&i,&j,&k);      B.scanf(“%d_%d_%d”,&i,&j,&k);\nC.scanf(“%d,%d,%d”,&i,&j,&k);        D.scanf(“i=%d,j=%d,k=%d”,&i,&j,&k);\n4. 已有如下定义和输入语句 \n,\n若要求\na1,a2,c1,c2\n值分别为\n10,20,A\n和\nB,\n当从第一列开始输入数据时\n,\n正确的数据输入方式是\n （ ）。\nint  a1,a2;  char  c1,c2;\nscanf(\"%d%c%d%c\",&a1,&c1,&a2,&c2); 注意：＿表示空格，\n<CR>\n表示回车\nA. 10A＿20B<CR>  B. 10＿A＿ 20＿ B<CR>   C. 10A20<CR>   D. 10A20＿B<CR>\n。\n5. 阅读以下程序\n,\n当输入数据的形式为\n25,13,10<CR>\n正确的输出结果为\n（ ）。\nvoid main()\n{   int  x,y,z\nscanf(\"%d%d%d\",&x,&y,&z );\nprintf(\"x+y+z=%d\\n ,x+y+z);\n。\n}\nA．x+y+z=48      B．x+y+z=35      C．x+z=35        D．不确定值",
+    "输入格式": "",
+    "输出格式": "int main()\n\n{\n\nprintf(\"----------\");\n\n//例如：本次习题有5道题，则你的输出格式应为printf(\"AAAAA\");\n\n//选项均由大写A,B,C,D组成，输出语句有一条 \n\nreturn 0;\n\n} \n\n\n\n请将上述提供的程序复制到提交代码的位置并作相应修改。",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

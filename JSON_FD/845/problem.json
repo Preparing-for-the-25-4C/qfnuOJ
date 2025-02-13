@@ -1,0 +1,9 @@
+{
+    "说明": "java中提供了对正则表达式的支持。\n\n有的时候，恰当地使用正则，可以让我们的工作事半功倍！\n如下代码用来检验一个四则运算式中数据项的数目，请填写划线部分缺少的代码。\n注意：只填写缺少代码，不要写任何多余内容，例如，已有的双引号。\npublic class A\n\n{\n\n public static int f(String s)\n\n {\n\n  return s.split(\"________________\").length;\n\n }\n\n \n\n public static void main(String[] args)\n\n {\n\n  System.out.println(f(\"12+35*5-2*18/9-3\")); //7\n\n  System.out.println(f(\"354*12+3-14/7*6\")); //6\n\n }\n\n}\n--------------------------------------------------------------------------------------------------------------------------------\n注意，这题是代码填空，蓝桥正式比赛时，如果正确答案是a=a+b,那么只需要提交a=a+b就可以\n但，我们在这个网站模拟比赛，只能用输出语句输出a=a+b，比如，Java语言import java.util.*;\n\npublic class Main\n\n{\n\n public static void main(String[] args)\n\n {\n\n  System.out.println(\"a=a+b\"); \n\n }\n\n}",
+    "输入格式": "",
+    "输出格式": "",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

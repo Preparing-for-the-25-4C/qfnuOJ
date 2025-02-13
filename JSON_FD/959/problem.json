@@ -1,0 +1,9 @@
+{
+    "说明": "小 Y 是一个充满智慧的女孩子，但是她只会使用串并联的方法计算两个节点之间的电阻。\n        \n\n\n\n            现在小 Y 有一个电阻网络，问有多少点对 \nu,v (u≠v)u, v \\ (u \\neq v)\nu\n,\nv\n \n(\nu\n≠\nv\n)\n 之间的电阻可以用串并联的方法计算出来。\n        \n\n\n\n            我们来形式化地定义一下点对 \nu,v (u≠v)u, v \\ (u \\neq v)\nu\n,\nv\n \n(\nu\n≠\nv\n)\n 之间的电阻能用串并联的方法计算出来的条件。首先我们把电阻网络看成一个 \nnn\nn\n 个点 \nmm\nm\n 条边的图（每个电阻对应一条边）。令 \nSS\nS\n 表示从 \nuu\nu\n 到 \nvv\nv\n 的所有简单路径（不经过重复的点的路径）上点的并集，也就是对于一个点 \nxx\nx\n，如果存在一条从 \nuu\nu\n 到 \nvv\nv\n 的简单路径经过这个点，那么它就在集合 \nSS\nS\n 中。如果 \nSS\nS\n 非空且 \nSS\nS\n 的导出子图是 \nu,vu,v\nu\n,\nv\n 为端点的二端串并联图，那么 \nu,vu,v\nu\n,\nv\n 之间的电阻就能用串并联方法计算。\n        \n\n\n\n\n\n\n\n                    一个有两个不同端点 \ns,ts,t\ns\n,\nt\n 的图被称为二端图，其中一个称为源点，另一个称为汇点。\n                \n\n\n\n\n\n\n\n                    两个二端图 \nX,YX,Y\nX\n,\nY\n 并联 (parallel composition) 是指建一个新图，把 \nXX\nX\n 和 \nYY\nY\n 的源点和汇点分别合并起来。\n                \n\n\n\n\n\n\n\n                    两个二端图 \nX,YX,Y\nX\n,\nY\n 串联 (series composition) 是指建一个新图，把 \nXX\nX\n 的汇点和 \nYY\nY\n 的源点合并起来。\n                \n\n\n\n\n\n\n\n                    由若干个两个点一条边的二端图经过一系列串并联变化之后形成的图称为二端串并联图。\n                \n\n\n\n\n\n\n\n\n\n\n\n\n\n            集合 \nSS\nS\n 的导出子图点集为 \nSS\nS\n，边集由原图中两个端点都在 \nSS\nS\n 中的边构成。",
+    "输入格式": "第一行包含两个正整数 \nn,mn,m\nn\n,\nm\n，表示电阻网络中的节点数和电阻数。\n        \n\n\n\n            接下来 \nmm\nm\n 行，每行包含两个正整数 \nu,v (1≤u,v≤n, u≠v)u,v \\ (1 \\leq u,v \\leq n, \\ u \\neq v)\nu\n,\nv\n \n(\n1\n≤\nu\n,\nv\n≤\nn\n,\n \nu\n≠\nv\n)\n，表示有一个电阻在节点 \nuu\nu\n 和 \nvv\nv\n 之间。",
+    "输出格式": "输出共一行，表示答案，即有多少点对之间的电阻可以使用串并联的方法计算出来。",
+    "样例": {
+        "输入": "6 6\n1 2\n1 3\n1 4\n2 3\n2 4\n5 6",
+        "输出": "6"
+    }
+}

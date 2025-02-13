@@ -1,0 +1,9 @@
+{
+    "说明": "1.设有以下说明语句\nstruct ex\n{ \nint x; float y;char  z; } example;\n则下面的叙述中不正确的是（ ）。\nA.struct是定义结构体类型的关键字       B.example是结构体类型名\nC.x，y，z都是结构体成员名                 D.struct ex是结构体类型名\n2.已知学生记录描述为\nstruct\nstudent\n{\nint no;\nchar\nname[20];\nchar sex;\nstruct{int year; int month; int\nday; }birth;\n};\nstruct student s;\n设变量\ns\n中的\n“\n生日\n”\n应是\n“1984\n年\n11\n月\n11\n日\n”\n，下列对\n“\n生日\n”\n的正确赋值方式是（\n  \n）。\nA\n．\n year=1984;month=11;day=11;\nB\n．\n birth.year=1984;birth.month=11;birth.day=11;\nC\n．\n s.year=1984;s.month=11;s.day=11;\nD． s.birth.year=1984;s.birth.month=11;s.birth.day=11;\n3.有如下定义\nstruct\nperson { char name[9]； int\nage；}；\nstruct\nperson class[10]={\"Johu\",17,\"Paul\",19，\"Mary\",18,\"Adam\",16};\n根据上述定义，能输出字母M 的语句是（ ）。\nA. prinft（\" %c\\n\"，class[3].name）；\nB. printf（\" %c\\n\"，class[3].name[1]）；\nC. prinft（\" %c\\n\"，class[2].name[1]）；\nD. printf（\" %c\\n\"，class[2].name[0]）；\n4.设有如下定义：\nstruct\nsk {int a ；float\nb ；}data ，*p ；\n若有p=&data ； ，则对data 中的a 域的正确引用是（ ）。\nA.（*p）.data.a      B.（*p）.a      C.p->data.a       D.p.data.a\n5.p\n有以下说明和定义语句\nstruct student\n{ int age; char num[8];};\nstruct student stu[3]={{20,\"200401\"},{21,\"200402\"},{19,\"200403\"}};\nstruct student *p=stu;\n以下选项中引用结构体变量成员的表达式错误的是（\n）。\nA\n．\n(p++)->num    B\n．\np->num    C\n．\n(*p).num     D\n．\nstu[3].age\n6.有以下语句：\ntypedef struct stu\n{\nchar name[20];\nint age;\n}TT;\n下面叙述正确的是（\n  \n）。\nA\n．可以用\nstu\n定义结构体变量\n           B\n．\nstu\n是结构体\nstruct\n类型的变量\nC\n．可以用\nTT\n定义结构体变量\n           D\n．\nTT\n是\nstruct stu\n类型的变量",
+    "输入格式": "",
+    "输出格式": "#include<stdio.h>\n\n#define N 7\n\n\n\nint main()\n\n{\n\nint i;\n\nchar cAnswer[N] = {\"//将你的答案表示成字符串，注意中间不要有空格\"};\n\n//例： char cAnswer[N] = {\"AAAAAA\"}; \n\n//N的值为选择题的个数加1，如本次作业选择题的个数为6，则N的值为7 \n\nprintf(\"%s\", cAnswer);\n\nreturn 0;\n\n}\n请将上述提供的程序复制到提交代码的位置并作相应修改。",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

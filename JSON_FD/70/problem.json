@@ -1,0 +1,9 @@
+{
+    "说明": "请输出以下内容\nHello World!\nI'm a C++ program.\n提示:所有的符号是英文符号\n输出回车的方法举例\ncout<<\"First Line\"<<endl<<\"Second Line\";  // 说明：endl能输出换行\n也可以这样 cout<<\"First Line\"<<endl; cout<<\"Second Line\";\n还可写成\ncout<<\"First Line\"; cout<<endl; cout<<\"Second Line\";\n今后就不再重复提醒必须注意输出的大小写及英文字符，输出内容中该有的空格以及输出每行首尾不该有空格。",
+    "输入格式": "",
+    "输出格式": "",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "说明": "那么请优化这段代码：\n#include \"stdio.h\"\n\n#define N 10000 \n\nint a[N][N];\n\nint main(int argc,char* argv[])\n\n{\n\n\n \nint i,j,sum=0;\n\n\n \nfor(j=0;j<N;j++)//行\n\n\n \nfor(i=0;i<N;i++)//列 \n\n\n \nsum+=a[i][j];\n\n\n \nprintf(\"%d\\n\",sum);\n\n\n \nreturn 0;\n\n}",
+    "输入格式": "",
+    "输出格式": "",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}
