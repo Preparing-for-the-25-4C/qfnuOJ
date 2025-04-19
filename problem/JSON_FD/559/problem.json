@@ -1,0 +1,9 @@
+{
+    "说明": "1. Ｃ语言中的标识符只能由字母、数字和下划线三种字符组成，且第一个字符（　　）。\nA) \n必须为字母\nB) \n必须为下划线\nC) \n必须为字母或下划线\nD) \n可以是字母、数字和下划线中任一种字符\n2. 以下选项中，合法的用户标识符是（ ）。\nA．long       B．_2abc      C．3dmax       D．A.dat\n3. 下面四个选项中，均是合法的用户标识符的选项是（　　）。\nA) A           B) float           C) b-a             D) _123\nP_0            la0                goto               temp\ndo             _A                 int                INT\n4. 下面选项中，不是合法整型常量的是（ ） 。\nA\n）\n160\n    B\n）－\n0xcd\ng   C\n）－\n01 \n    D\n）－\n0x48a\n5. 下列变量定义和初始化中合法的是（ ）\nA．short  _a=1.1e-1;                      B．double  b=1+5e2.5;\nC．long  do=0xfdaL;                      D．float  2_and=1e-3;\n6. 以下能正确地定义整型变量\na,b\n和\nc \n并为\n它们都赋初值\n5\n的语句是\n（）\nA.int  a=b= c= 5;       B. int a,b, c= 5;\nC.int  a= 5,b=5,c=5;        D.a= b= c=5;\n7. 设\nx \n、\ny\n均为\nf1oat\n型变量\n,\n则以下不合法的赋值语句是\n（ ）。\nA.++x;     B.y=(x%2)/10;    C.  x*=y+8;    D.x=y=0;\n8. 与数学式子\n对应的\nC\n语言表达式是（\n ）。\nA\n．\n9*x^n/(2*x-1)                         B\n．\n9*x**n/(2*x-1)\nC\n．\n9*pow(x,n)*(1/(2*x-1))                  D\n．\n9*pow(n,x)/(2*x-1)\n9. 若有代数式\n，假设\nabcd\n都是小数，则不正确的\nC\n语言表达式是（\n ）。\nA\n．\na/c/d*b*3                             B\n．\n3*a*b/c/d\nC\n．\n3*a*b/c*d                             D\n．\na*b/d/c*3\n10. 在\nC\n语言中，要求运算数必须是整数的运算符是（\n ）。\nA\n．\n/      \n     B\n．\n++     \n     C\n．\n*=     \n           D\n．\n%",
+    "输入格式": "",
+    "输出格式": "int main()\n\n{\n\nprintf(\"----------\");\n\n//例如：本次习题有10道题，则你的输出格式应为printf(\"AAAAAAAAAA\");\n\n//选项均由大写A,B,C,D组成，输出语句有一条 \n\nreturn 0;\n\n} \n\n\n\n请将上述提供的程序复制到提交代码的位置并作相应修改。",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

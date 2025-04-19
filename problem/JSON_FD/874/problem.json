@@ -1,0 +1,9 @@
+{
+    "说明": "A Communist regime is trying to redistribute wealth in a village. They have have decided to sit everyone around a circular table. First, everyone has converted all of their properties to coins of equal value, such that the total number of coins is divisible by the number of people in the village. Finally, each person gives a number of coins to the person on his right and a number coins to the person on his left, such that in the end, everyone has the same number of coins. Given the number of coins of each person, compute the minimum number of coins that must be transferred using this method so that everyone has the same number of coins.",
+    "输入格式": "There is a number of inputs. Each input begins with n(n<1000001), the number of people in the village. n lines follow, giving the number of coins of each person in the village, in counterclockwise order around the table. The total number of coins will fit inside an unsigned 64 bit integer.",
+    "输出格式": "For each input, output the minimum number of coins that must be transferred on a single line.",
+    "样例": {
+        "输入": "3\n100\n100\n100\n4\n1\n2\n5\n4",
+        "输出": "0\n4"
+    }
+}

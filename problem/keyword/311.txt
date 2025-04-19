@@ -1,0 +1,1 @@
+digit processing, mathematical analysis, conditional statements, loop control, numerical decomposition, edge case handling, modular arithmetic, integer division, number theory, combinatorics, arithmetic operations

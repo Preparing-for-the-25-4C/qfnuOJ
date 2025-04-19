@@ -1,0 +1,9 @@
+{
+    "说明": "1. 若有定义：\nint m=5; float  x=3.9, y=4.7; \n则表达式\nx+m%4*(int)(x+y)%3/5\n的值是（\n ）。\nA\n．\n3.9  \n  B\n．\n4.3   \n  C\n．\n4.7   \n      D\n．\n5\n2. 在\nC\n语言中，\nchar\n型数据在内存中的存储形式是（\n ）。\nA\n．补码        \nB\n．反码        \nC\n．原码             \nD\n．\nASCII\n码\n3. 设变量\nx\n为\nfloat\n类型，\nm\n为\nint\n类型，则以下能实现将\nx\n中的数值保留小数点后两位，第三位进行四舍五入运算的表达式是（\n ）。\nA\n．\nx=(x*100+0.5)/100.0\nB\n．\nm=x*100+0.5, x=m/100.0\nC\n．\nx=x*100+0.5/100.0\nD\n．\nx=(x/100+0.5)*100.0\n4. 设有定义：\nint k=0;\n，以下选项的四个表达式中与其他三个表达式的值不相同的是(    )\n。\nA．k++   B．k+=1   C．++k   D．k+1\n5. 表达式\n13/3*sqrt(16.0)/8\n的数据类型是（\n ）。\nA\n．\nint   \n       B\n．\nfloat        C\n．\ndouble           D\n．不确定\n6. 若\nx,i,j\n和\nk\n都是\nint\n型变量\n,\n则执行下面表达式后\nx\n的值为\n（ ）。\nx=(i=4,j=16,k=32)\nA．4      B．16      C．32     D．52\n7. 以下四个程序中，完全正确的是（ ）。\nA\n．\n#include  “stdio.h”           B\n．\n #include  “stdio.h”\nvoid main();                      void main()\n{/*programming*/                 {/*/programming/*/\nprintf(\"programming!\\n\");}          printf(\"programming!\\n\");}\nC\n．\n#include “stdio.h”             D\n．\n include  “stdio.h”\nvoid main()                       void main()\n{/*/*progmmmfug*/*/              {/*programming*/\nprintf(\"programming!\\n\");}           printf(\"programming!\\n\");}",
+    "输入格式": "",
+    "输出格式": "int main()\n\n{\n\nprintf(\"----------\");\n\n//例如：本次习题有7道题，则你的输出格式应为printf(\"AAAAAAA\");\n\n//选项均由大写A,B,C,D组成，输出语句有一条 \n\nreturn 0;\n\n} \n\n\n\n请将上述提供的程序复制到提交代码的位置并作相应修改。",
+    "样例": {
+        "输入": "",
+        "输出": ""
+    }
+}

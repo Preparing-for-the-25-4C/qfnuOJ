@@ -1,0 +1,1 @@
+greedy algorithm, heap, priority queue, simulation, sorting, scheduling algorithm, time management, min-heap, job scheduling, task assignment, dynamic programming, binary heap, queue, STL, computational complexity, multithreading algorithms, resource allocation, event-driven simulation, parallel processing, load balancing, amortized analysis

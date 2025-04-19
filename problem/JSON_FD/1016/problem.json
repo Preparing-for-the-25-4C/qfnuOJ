@@ -1,0 +1,9 @@
+{
+    "说明": "Modulo Solitaire is a game that can be played when you are bored. You can even play it without a phone, just on paper. First, you pick a number \nm\n. Then you pick two sequences of numbers \na\ni\n and \nb\ni\n. Finally, you pick a starting number \ns\n0\n. Now, your goal is to go from \ns\n0\n to 0 in as few moves as possible. In each move, you choose an \ni\n, then multiply your current number by \na\ni\n, add \nb\ni\n to it, and reduce the result modulo \nm\n. That is, \ns\nj\n = (s\nj-1\n * a\ni\nj\n + b\ni\nj\n) % m\n.",
+    "输入格式": "The first line of input contains three integers \n0 < m <= 1000000\n, \n0 <= n <= 10\n, and \n0 < s\n0\n < m\n. The next \nn\n lines each contain two integers, a pair \n0 <= a\ni\n <= 1000000000\n and \n0 <= b\ni\n <= 1000000000\n.",
+    "输出格式": "Output a single integer, the shortest number of moves needed to reach 0 starting from \ns\n0\n. If it is not possible to reach 0 in any number of moves, output \n-1\n.",
+    "样例": {
+        "输入": "5 2 1\n2 1\n3 1",
+        "输出": "2"
+    }
+}

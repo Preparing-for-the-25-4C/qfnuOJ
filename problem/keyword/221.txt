@@ -1,0 +1,1 @@
+dynamic programming, divide and conquer, recursion, memoization, sorting, computational geometry, subset enumeration, greedy

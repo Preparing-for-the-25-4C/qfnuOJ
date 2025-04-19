@@ -1,0 +1,1 @@
+dynamic programming, permutations, mathematical analysis, probability calculation, factorial computation, combinatorial mathematics, observation, modulus operations, big integer handling

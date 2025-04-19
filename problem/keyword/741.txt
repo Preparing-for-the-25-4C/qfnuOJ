@@ -1,0 +1,1 @@
+simulation, string manipulation, loop structures, mathematical analysis, array processing, number to character conversion, symmetric pattern construction, pattern generation, sequence construction, mathematical formula application, line-by-line generation

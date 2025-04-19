@@ -1,0 +1,1 @@
+string processing, loops, simulation, output formatting, basic programming constructs, string concatenation, iteration, pattern generation
